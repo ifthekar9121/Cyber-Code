@@ -1,0 +1,174 @@
+/*===== Font File =====*/
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
+/*===== Global CSS =====*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{ 
+	text-decoration: none;
+}
+.no-padding{
+	padding: 0;
+}
+/*===== Header Section =====*/
+header{
+	background: url(../img/main-header.png) no-repeat top center;
+	background-size: cover;
+	position: relative;
+}
+.nav-container{
+	padding: 25px 0;
+}
+.navbar-light .navbar-nav .nav-link {
+    padding: 0 22px;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #90ECFF;
+}
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #90ECFF;
+}
+.header-content{
+	padding: 35px 0 135px;
+}
+.header-left-content{
+	margin-top: 90px;
+}
+.header-left-content h2{
+	font-size: 45px;
+	letter-spacing: 5px;
+	color: #fff;
+}
+.header-left-content h1{
+	font-size: 90px;
+	letter-spacing: 5px;
+	color: #fff;
+}
+.header-left-content h1 span{
+	color: #90ECFF;
+}
+.header-left-content p{
+	padding-right: 115px;
+	color: #fff;
+}
+.header-left-content button{
+	background: #90ECFF;
+    padding: 3px 48px;
+    margin-top: 10px;
+    border-radius: 17px;
+    outline: none;
+    border: 1px solid #90ECFF;
+    transition: 0.3s ease-in-out;
+}
+.header-left-content button:hover{
+	background: transparent;
+	border: 1px solid #fff;
+	color: #fff
+}
+.header-Right-content{
+	text-align: center;
+}
+.hearedr-button{
+	background: rgba(255, 255, 255, 0.1);
+	position: absolute;
+	padding: 15px;
+	border-radius: 21px;
+	border: 1px solid #fff;
+	font-size: 25px;
+	outline: none;
+	top: 88%;
+	left: 49%;
+	color: #fff;
+	transition: 0.3s ease-in-out;
+}
+.hearedr-button:hover{
+	background: #90ECFF;
+	border: 1px solid #90ECFF;
+	color: #000;
+}
+
+/*===== Information Section =====*/
+.content-section{
+	padding: 75px 0;
+}
+.content-area{
+	text-align: center;
+	box-shadow: 0px 0px 10px 10px #d9d9d9;
+	padding: 20px;
+}
+.content-area p{
+	text-align: left;
+	font-size: 25px;
+}
+.content-item{
+	padding: 20px;
+}
+.content-border{
+	border-right: 2px solid #D9D9D9;
+}
+/*===== Footer Section =====*/
+footer{
+	text-align: center;
+	padding-bottom: 75px;
+}
+footer p{
+	margin: 0;
+}
+
+
+/*===== Media Query For Mobile =====*/
+@media (min-width: 320px) and (max-width: 557px) {
+	.navbar-brand{
+		width: 65%;
+	}
+	.navbar-light .navbar-toggler{
+    	border: 1px solid #90ECFF;
+    	background: #90ECFF;
+	}
+	.navbar-light .navbar-nav .nav-link {
+    	padding: 8px 22px;
+    	font-size: 20px;
+    }
+    .header-left-content h2 {
+    	font-size: 25px;
+	}
+	.header-left-content h1 {
+    	font-size: 50px;
+    }
+	.header-content {
+	    padding: 15px 0 160px;
+	}
+	.header-left-content {
+    	margin-top: 0;
+	}
+	.header-left-content p {
+    	padding: 10px 0 0;
+	}
+	.hearedr-button {
+    	top: 86%;
+    	left: 43%;
+	}
+	.content-section {
+	    padding: 15px 0;
+	}
+	.content-area p {
+	    text-align: center;
+	    font-size: 20px;
+	}
+	footer {
+	    text-align: center;
+	    padding: 15px 0;
+	}
+}
